@@ -1,6 +1,6 @@
 #!/bin/bash
 read -t 3 -p  "Running Syntax and Lexical Analyzer (in Rust) on test0.sc..."
-echo "\n"
+printf "\n"
 
 cd rust-Yarrabozaed
 cargo run test0.sc -s > scheme-Yarrabozaed/mytest.scm
@@ -9,13 +9,13 @@ cd scheme-Yarrabozaed
 cat mytest.scm
 
 read -t 3 -p  "Running Scheme Program..."
-echo "\n"
+printf "\n"
 scheme --load square-circle.scm mytest.scm
 cd ..
 
 read -t 3 -p  "Running Prolog Program..."
-echo "\n"
+printf "\n"
 
 read -t 3 -p  "Goodbye..."
-echo "\n"
+printf "\n"
 
