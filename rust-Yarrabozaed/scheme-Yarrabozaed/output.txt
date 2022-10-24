@@ -1,0 +1,82 @@
+MIT/GNU Scheme running under GNU/Linux
+Type `^C' (control-C) followed by `H' to obtain information about interrupts.
+
+Copyright (C) 2019 Massachusetts Institute of Technology
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Image saved on Thursday September 5, 2019 at 11:51:46 AM
+  Release 10.1.10   || Microcode 15.3 || Runtime 15.7 || SF 4.41
+  LIAR/x86-64 4.118
+;Loading "full.scm"...
+TEST 1: ----- make-point			(2 . 3)
+(2 . 3)
+TEST 2: ----- get-x	    		2
+2
+TEST 3: ----- get-y	    		3
+3
+TEST 4: ----- print-circle	    Area=50.26548 Perimeter=25.13274
+Circle
+Area:      50.26548
+Perimeter: 25.13274
+
+TEST 5: ----- print-square	    Area=25 Perimeter=20
+Square
+Area:      25
+Perimeter: 20
+
+TEST 6: ----- contained-circle-square 1	    #f
+#f
+TEST 7: ----- contained-circle-square 2	    #t
+#t
+TEST 8: ----- contained-circle-square 3	    #f
+#f
+TEST 9: ----- contained-circle-circle 1	    #t
+#t
+TEST 10: ----- intersects-circle-circle 2    #f
+#f
+TEST 11: ----- contained-circle-circle 3    #f
+#f
+TEST 12: ----- intersects-square-circle 1    #t
+#t
+TEST 13: ----- contained-square-circle 2    #f
+#f
+TEST 14: ----- contained-square-circle 3    #f
+#f
+TEST 15: ----- contained-square-square 1    #t
+#t
+TEST 16: ----- contained-square-square 2    #f
+#f
+TEST 17: ----- contained-square-square 3    #f
+#f
+TEST 18: ----- intersects-circle-square 1    #t
+#t
+TEST 19: ----- intersects-circle-square 2    #t
+#t
+TEST 20: ----- intersects-circle-square 3   #f
+#f
+TEST 21: ----- intersects-circle-circle 1   #f
+#f
+TEST 22: ----- intersects-circle-circle 2   #t
+#t
+TEST 23: ----- intersects-circle-circle 3   #f
+#f
+TEST 24: ----- intersects-square-circle 1   #t
+#t
+TEST 25: ----- intersects-square-circle 2   #f
+#f
+TEST 26: ----- intersects-square-circle 3   #f
+#f
+TEST 27: ----- intersects-square-square 1   #f
+#f
+TEST 28: ----- intersects-square-square 2   #f
+#f
+TEST 29: ----- intersects-square-square 3   #t
+#t
+TEST 30: ----- intersects-square-square 4   #t
+#t
+
+
+;... aborted
+
+Pulvis et umbra sumus.
