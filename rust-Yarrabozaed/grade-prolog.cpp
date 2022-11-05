@@ -1,0 +1,35 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main(int argc, char* argv[]){
+	const int TESTS = 25;
+	if (argc != 3){
+		cerr << "Not working" << endl;
+		cerr << "Usage: " << endl;
+		cerr << argv[0] << " key-output your-output" << endl;
+		return 1;
+	}
+	ifstream student(argv[2]);
+	ifstream key(argv[1]);
+	string studentAnswer, keyAnswer;
+	int count = 0, total = 0;
+	while (student >> studentAnswer && key >> keyAnswer){
+		if (studentAnswer == keyAnswer)
+			count++;
+		else
+			cout << "--" << total << endl;
+		total++;
+	}
+	cout << "Correct Answers:  " << count << endl;
+	cout << "Queries executed: " << total << endl;
+	cout << "Total tests:      " << TESTS << endl;
+	cout << "Percentage of tests passed: "
+			 << static_cast<double>(count) / TESTS * 100.0
+			 << endl;
+	student.close();
+	key.close();
+	return 0;
+}
