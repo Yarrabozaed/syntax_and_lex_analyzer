@@ -16,6 +16,13 @@ cd ..
 read -t 3 -p  "Running Prolog Program..."
 printf "\n"
 
+cargo run test0.sc -p > prolog-Yarrabozaed/mytest.pl
+
+cd prolog-Yarrabozaed
+
+cat square-circle.pl mytest.pl > plogfile.pl
+swipl -q -f plogfile.pl -t main
+
 read -t 3 -p  "Goodbye..."
 printf "\n"
 
