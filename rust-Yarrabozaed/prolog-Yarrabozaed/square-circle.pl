@@ -5,6 +5,10 @@
 ; Professor: Dr. Arias
 */
 
+circle(point2d(A,B),C).
+square(point2d(A,B), C).
+
+
 /* Contained Rules-> 
     check if first shape is contained in second shape 
 */
