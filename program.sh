@@ -23,6 +23,9 @@ cd prolog-Yarrabozaed
 cat square-circle.pl mytest.pl > plogfile.pl
 swipl -q -f plogfile.pl -t main
 
+rm mytes.pl
+rm plogfile.pl
+
 read -t 3 -p  "Goodbye..."
 printf "\n"
 
